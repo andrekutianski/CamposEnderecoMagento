@@ -71,6 +71,24 @@
                     </li>
                     <?php endif; ?>
                     <li class="fields">
+						<div class="field"><!--end_numero -->
+						<label for="shipping:end_numero" class="required"><em>*</em><?php echo $this->__('Numero')?></label>
+						<div class="input-box">
+							<input type="text" id="shipping:end_numero" name="shipping[end_numero]" value="<?php echo $this->escapeHtml($this->getAddress()->getEnd_numero()) ?>" title="<?php echo $this->__('Numero') ?>" class="input-text"/>
+						</div>
+					</div><!--end_numero -->
+					<div class="field"><!--bairro -->
+						<label for="shipping:bairro" class="required"><em>*</em><?php echo $this->__('Bairro')?></label>
+						<div class="input-box">
+							<input type="text" id="shipping:bairro" name="shipping[bairro]" value="<?php echo $this->escapeHtml($this->getAddress()->getBairro()) ?>" title="<?php echo $this->__('Bairro') ?>" class="input-text"/>
+						</div>
+					</div><!--bairro -->
+					<div class="field"><!--complemento -->
+						<label for="shipping:complemento"><?php echo $this->__('Complemento')?></label>
+						<div class="input-box">
+							<input type="text" id="shipping:complemento" name="shipping[complemento]" value="<?php echo $this->escapeHtml($this->getAddress()->getComplemento()) ?>" title="<?php echo $this->__('Complemento') ?>" class="input-text"/>
+						</div>
+					</div><!--complemento -->
                         <div class="field">
                             <label for="shipping:city" class="required"><em>*</em><?php echo $this->__('City') ?></label>
                             <div class="input-box">
