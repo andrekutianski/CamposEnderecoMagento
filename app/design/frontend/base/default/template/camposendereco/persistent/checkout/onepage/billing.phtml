@@ -84,13 +84,13 @@
 					<div class="field"><!--end_numero -->
 						<label for="billing:end_numero" class="required"><em>*</em><?php echo $this->__('Numero')?></label>
 						<div class="input-box">
-							<input type="text" id="billing:end_numero" name="billing[end_numero]" value="<?php echo $this->escapeHtml($this->getAddress()->getEnd_numero()) ?>" title="<?php echo $this->__('Numero') ?>" class="input-text"/>
+							<input type="text" id="billing:end_numero" name="billing[end_numero]" value="<?php echo $this->escapeHtml($this->getAddress()->getEnd_numero()) ?>" title="<?php echo $this->__('Numero') ?>" class="input-text required-entry"/>
 						</div>
 					</div><!--end_numero -->
 					<div class="field"><!--bairro -->
 						<label for="billing:bairro" class="required"><em>*</em><?php echo $this->__('Bairro')?></label>
 						<div class="input-box">
-							<input type="text" id="billing:bairro" name="billing[bairro]" value="<?php echo $this->escapeHtml($this->getAddress()->getBairro()) ?>" title="<?php echo $this->__('Bairro') ?>" class="input-text"/>
+							<input type="text" id="billing:bairro" name="billing[bairro]" value="<?php echo $this->escapeHtml($this->getAddress()->getBairro()) ?>" title="<?php echo $this->__('Bairro') ?>" class="input-text required-entry"/>
 						</div>
 					</div><!--bairro -->
 					<div class="field"><!--complemento -->
